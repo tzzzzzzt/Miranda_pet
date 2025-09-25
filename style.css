@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    background: #f7fbff;
+
+    color: #222;
+}
+
+header {
+    background: #2b7cff;
+
+    padding: 10px 0;
+
+    color: white;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 15);
+}
+
+.menu {
+    width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+}
+
+.menu button {
+    background: rgba(255, 255, 255,0.15);
+
+    border: none;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.centro {
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    text-align: center;
+}
+
+#pet {
+    width: 220px;
+    
+    height: 220px;
+
+    margin: 10px 0;
+}
+
+.grip-estadisticas {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+
+    justify-items: center;
+
+    margin: 12px 0 18px;
+}
+
+.botones {
+    margin: 12px 0;
+
+    display: flex;
+
+    gap: 10px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.recordatorios {
+    margin-top: 18px;
+
+    text-align: left;
+}
+
+.recordatorios input {
+    width: 70%;
+
+    padding: 8px;
+
+    margin-right: 6px;
+}
+
+.recordatorios button {
+    padding: 8px 10px;
+}
+
+.message {
+    margin: 6px auto;
+
+    padding: 8px 12px;
+
+    background: #fff8c4;
+
+    border-radius: 8px;
+
+    display: inline-block;
+}

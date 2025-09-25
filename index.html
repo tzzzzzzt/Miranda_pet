@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<htmrl lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>MirandaPet 🐾</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Header / Menu (Siempre visible) -->
+
+         <header>
+            <nav class="menu">
+                <button id="btnTienda">🏪 Tienda</button>
+                <button id="btnMenuJuegos">🕹️ Juegos</button>
+            </nav>
+         </header>
+
+         <!-- Pantalla de inicio :D -->
+          <div id="inicio" class="centro">
+            <h1> 😊 Biembenid@ a mirandaPet😊</h1>
+            <p> Elije un nombre para tu mascota y estamos listos para comenzar. </p>
+            <input id="inputName" placeholder="Nombre de la mascota (ej. Manolito)"/>
+            <div class="acciones-inicio">
+                <button id="btnComenzar">Comenzar</button>
+            </div>
+            <small> La tienda esta en construcción; Juegos sube el nivel de entretenimento.</small>
+          </div>
+
+          <!-- Pantalla del jeugo 🕹️ -->
+           <div>
+
+            <!-- Nombre arriba de manolitoXD (Pet) -->
+             <h2 id="petName">MirandaPet</h2>
+
+            <!-- Mascota en el centro -->
+             <div id="pet-container">
+                <img id="pet" src="feliz.png" alt="MirandaPet">
+             </div>
+
+            <!-- implementacion recordatorios -->
+            <div id="message" class="message" style="display:nome;"></div>
+
+            <!-- Barras de estado (estoy callendo en la locura aiuaaa) -->
+            <div id="estadisticas" class="grid-estadisticas">
+                <div>Hambre: <progress id="barraHambre" value="50" max="100"></progress></div>
+                <div>Salud: <progress id="barraSalud" value="50" max="100"></progress></div>
+                <div>Entretenimiento: <progress id="barraEntretenimiento" value="50" max="100"></progress></div>
+                <div>Felicidad: <progress id="barraFelicidad" value="50" max="100"></progress></div>
+            </div>
+
+            <!-- Botones de accion ( miselaneos / opciones ) -->
+            <div class="botones">
+                <button onclick="alimentar()">🥩 Alimentar</button>
+                <button onclick="jugar()">🎲 Jugar</button>
+                <button onclick="dormir()">😴 Dormir</button>
+                <button onclick="reiniciarJuego()">®️ Reiniciar</button>
+            </div>
+
+            <!-- Recordatorios -->
+            <section class="recordatorios">
+                <h3> Recordatorios</h3>
+                <div class="nuevo-recordatorio">
+                    <input id="nota" placeholder="Escribe un recordatorio: "/>
+                    <button onclick="agregarRecordatorio()">Agregar</button>
+                </div>
+                <ul id="listaRecordatorios"></ul>
+            </section>
+           </div>
+
+           <script src="script.js"></script>
+    </body>
+</htmrl>
