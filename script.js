@@ -42,6 +42,10 @@ function calcularFelicidad() {
     return Math.max(0, Math.min(100, felicidad));
 }
 
+setInterval(() => {
+    actualizarEstado();
+}, 0); // cada frame
+
 //actualizacion de barras segun las mates (ya no pienso ayuda)
 function actualizarEstado() {
     barraHambre.value = Math.max(0, Math.min(100, hambre));
@@ -164,4 +168,5 @@ function iniciarJuego(name) {
     iniciarCiclo();
 }
 document.getElementById("inputName").value = localStorage.getItem("pet") || "";
+
 mostrarRecordatorios();
